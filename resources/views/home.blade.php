@@ -50,7 +50,7 @@
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <!-- Hero Section -->
         <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold text-gray-900 mb-4">Upcoming Mini Projects</h2>
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Mini Projects</h2>
             <p class="text-xl text-gray-600 max-w-2xl mx-auto">
                 Explore our collection of innovative mini projects. Each project is designed to showcase different technologies and creative solutions.
             </p>
