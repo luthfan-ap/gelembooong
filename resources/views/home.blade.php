@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mini Projects Hub</title>
+    <title>Gelembong Playground</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -15,7 +15,7 @@
             <div class="flex justify-between items-center h-16">
                 <!-- Logo/Brand -->
                 <div class="flex items-center">
-                    <h1 class="text-2xl font-bold text-gray-900">MiniProjects</h1>
+                    <h1 class="text-2xl font-bold text-gray-900">Gelembong Playground</h1>
                 </div>
 
                 <!-- Navigation Links -->
@@ -46,6 +46,22 @@
         </div>
     </header>
 
+    <!-- Fullscreen Hero / Intro Section -->
+        <section
+            class="relative h-[500px] bg-fixed bg-center bg-cover bg-no-repeat"
+            style="background-image: url('https://images.unsplash.com/photo-1575783970733-1aaedde1db74?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+            <!-- Text Content -->
+            <div class="relative z-10 flex flex-col items-center justify-center text-center h-full px-4">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight">Gelembong Playground</h2>
+                <p class="text-lg md:text-xl text-gray-200 max-w-3xl">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </section>
+
     <!-- Main Content -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <!-- Hero Section -->
@@ -71,8 +87,8 @@
                     </div>
                 </div>
                 <div class="p-6">
-                    <h4 class="text-xl font-semibold text-gray-900 mb-2">Task Manager App</h4>
-                    <p class="text-gray-600 mb-4">A simple and elegant task management application with drag-and-drop functionality.</p>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-2">MBTI Quiz</h4>
+                    <p class="text-gray-600 mb-4">Discover your MBTI personality type with our quick and easy quiz.</p>
                     <div class="flex items-center justify-between">
                         <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">React.js</span>
                         <span class="text-sm text-gray-500">Coming Soon</span>
