@@ -5,62 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gelembong Playground</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 min-h-screen">
+<body class="bg-gray-50 min-h-screen font-[Montserrat]">
     <!-- Header/Navigation -->
-    <header class="bg-white shadow-sm border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <!-- Logo/Brand -->
-                <div class="flex items-center">
-                    <h1 class="text-2xl font-bold text-gray-900">Gelembong Playground</h1>
-                </div>
+<header class="fixed top-0 left-0 w-full bg-white/70 backdrop-blur-md z-50 shadow-sm border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-3">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo/Brand -->
+            <div class="flex items-center">
+                <h1 class="text-xl font-bold text-blue-600">Gelembong Playground</h1>
+            </div>
 
-                <!-- Navigation Links -->
-                <nav class="hidden md:flex items-center space-x-8">
-                    <a href="/" class="text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">
-                        Homepage
-                    </a>
-                    <a href="/developer" class="text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">
-                        Developer
-                    </a>
-                </nav>
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="/" class="text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">
+                    Homepage
+                </a>
+                <a href="/developer" class="text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200">
+                    Developer
+                </a>
+            </nav>
 
-                <!-- User Profile -->
-                <div class="flex items-center">
-                    <div class="relative">
-                        <button class="flex items-center space-x-2 text-gray-700 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-lg p-2 transition-colors duration-200">
-                            <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
-                                <span class="text-white text-sm font-medium">JD</span>
-                            </div>
-                            <span class="hidden sm:block text-sm font-medium">John Doe</span>
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
-                    </div>
+            <!-- User Profile -->
+            <div class="flex items-center">
+                <div class="relative">
+                    <button class="flex items-center space-x-2 text-gray-700 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-lg p-2 transition-colors duration-200">
+                        <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                            <span class="text-white text-sm font-medium">JD</span>
+                        </div>
+                        <span class="hidden sm:block text-sm font-medium">John Doe</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</header>
+
 
     <!-- Fullscreen Hero / Intro Section -->
         <section
-            class="relative h-[500px] bg-fixed bg-center bg-cover bg-no-repeat"
-            style="background-image: url('https://images.unsplash.com/photo-1575783970733-1aaedde1db74?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
-            <!-- Overlay -->
-            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        class="relative h-[700px] bg-fixed bg-center bg-cover bg-no-repeat"
+        style="background-image: url('https://images.unsplash.com/photo-1575783970733-1aaedde1db74?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
 
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+        <!-- Content (Teks + Gambar) -->
+        <div class="relative z-10 h-full flex items-center justify-between px-10 gap-8">
             <!-- Text Content -->
-            <div class="relative z-10 flex flex-col items-center justify-center text-center h-full px-4">
-                <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight">Gelembong Playground</h2>
-                <p class="text-lg md:text-xl text-gray-200 max-w-3xl">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+            <div class="flex-1 text-left">
+            <p class="text-lg md:text-xl text-gray-200 max-w-3xl">Hi! welcome to,</p>
+            <h3 class="text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight">
+                Gelembong Playground
+            </h3>
+            <p class="text-lg md:text-xl text-gray-200 max-w-xl">
+                This playground was established as a platform for developers to enhance their individual skills
+                through projects that build their personal portfolios. Check out our mini projects below!
+            </p>
             </div>
+
+            <!-- Image Content -->
+            <div class="hidden md:block flex-1">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png"
+                     alt="Hero Image" class="w-full max-w-md mx-auto object-contain" />
+            </div>
+        </div>
         </section>
+
 
     <!-- Main Content -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
