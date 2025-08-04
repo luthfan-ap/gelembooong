@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="{{ asset('js/filter.js') }}"></script>
 </head>
 <body class="bg-gray-50 min-h-screen font-[Montserrat]">
     <!-- Header/Navigation -->
@@ -89,10 +90,17 @@
             </p>
         </div>
 
-        <!-- Projects Container -->
+        <!-- Filter Button -->
+        <div class="flex flex-wrap gap-4 justify-center mb-8">
+        <button data-filter="all" class="filter-btn bg-blue-100 text-blue-800 px-4 py-2 rounded-full hover:bg-blue-200 transition">All</button>
+        <button data-filter="quiz" class="filter-btn bg-green-100 text-green-800 px-4 py-2 rounded-full hover:bg-green-200 transition">Quiz</button>
+        <button data-filter="aplikasi" class="filter-btn bg-purple-100 text-purple-800 px-4 py-2 rounded-full hover:bg-purple-200 transition">Aplikasi</button>
+        <button data-filter="utility" class="filter-btn bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full hover:bg-yellow-200 transition">Utility</button>
+        </div>
+        <!-- Project Cards -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Project Card 1 -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" data-category="quiz">
                 <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
                     <div class="text-white text-center">
                         <div class="w-16 h-16 bg-white/20 rounded-lg flex items-center justify-center mx-auto mb-2">
@@ -114,7 +122,7 @@
             </div>
 
             <!-- Project Card 2 -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" data-category="aplikasi">
                 <div class="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
                     <div class="text-white text-center">
                         <div class="w-16 h-16 bg-white/20 rounded-lg flex items-center justify-center mx-auto mb-2">
@@ -136,7 +144,7 @@
             </div>
 
             <!-- Project Card 3 -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" data-category="aplikasi">
                 <div class="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
                     <div class="text-white text-center">
                         <div class="w-16 h-16 bg-white/20 rounded-lg flex items-center justify-center mx-auto mb-2">
@@ -159,7 +167,7 @@
             </div>
 
             <!-- Project Card 4 -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" data-category="aplikasi">
                 <div class="h-48 bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center">
                     <div class="text-white text-center">
                         <div class="w-16 h-16 bg-white/20 rounded-lg flex items-center justify-center mx-auto mb-2">
@@ -181,7 +189,7 @@
             </div>
 
             <!-- Project Card 5 -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" data-category="aplikasi">
                 <div class="h-48 bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center">
                     <div class="text-white text-center">
                         <div class="w-16 h-16 bg-white/20 rounded-lg flex items-center justify-center mx-auto mb-2">
@@ -203,7 +211,7 @@
             </div>
 
             <!-- Project Card 6 -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden" data-category="aplikasi">
                 <div class="h-48 bg-gradient-to-br from-indigo-400 to-indigo-600 flex items-center justify-center">
                     <div class="text-white text-center">
                         <div class="w-16 h-16 bg-white/20 rounded-lg flex items-center justify-center mx-auto mb-2">
